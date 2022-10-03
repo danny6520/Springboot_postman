@@ -1,5 +1,7 @@
 package com.springpostman.fetchdata_spr_pm;
 
+
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,8 +17,8 @@ public class UserModel {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 
 	@Column(name = "election_id")
-	String election_id;
-	
+	Integer election_id;
+	/*
 	@Column(name = "state")
 	String state;
 	
@@ -25,24 +27,24 @@ public class UserModel {
 	
 	@Column(name = "round")
 	int round;
-	
+	*/
 	@Column(name = "candidate_name")
 	String candidate_name;
-	
+	/*
 	@Column(name = "party")
 	String party;
 	
 	@Column(name = "round_count")
 	int round_count;
-
-	public String getElection_id() {
+*/
+	public Integer getElection_id() {
 		return election_id;
 	}
 
-	public void setElection_id(String election_id) {
+	public void setElection_id(Integer election_id) {
 		this.election_id = election_id;
 	}
-
+	/*
 	public String getState() {
 		return state;
 	}
@@ -66,7 +68,7 @@ public class UserModel {
 	public void setRound(int round) {
 		this.round = round;
 	}
-
+*/
 	public String getCandidate_name() {
 		return candidate_name;
 	}
@@ -74,7 +76,7 @@ public class UserModel {
 	public void setCandidate_name(String candidate_name) {
 		this.candidate_name = candidate_name;
 	}
-
+	/*
 	public String getParty() {
 		return party;
 	}
@@ -91,8 +93,10 @@ public class UserModel {
 		this.round_count = round_count;
 	}
 
+	*/
 	
 	
+
 
 	
 }
